@@ -1,0 +1,2 @@
+
+Here we would have the Database entities for each of the Model types. Following the SOLID principles, the idea is to have anticorruption layers: Database entities shouldn't be known outside of the Persistence layer.
