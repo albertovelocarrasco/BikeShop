@@ -33,8 +33,8 @@ Mainly the list of parts, the price rules between those parts and the constraint
 
 >The addition of a new part choice: How can Marcus introduce a new rim color, for example? Can you describe the UI? What changes in the database after this action?
 
-On this rushed solution, different colours would translate into different parts. So adding a new colour means creating a new Rim part for that colour. The UI for this would be a form where the details of the part could be added. It would use GatewayPartService.addPart, GatewayPartService.addPriceRule and GatewayPartService.addConstraint methods if special pricing or incompatibility with other parts are necessary. The Part, PriceRule and Constraint backend Database tables would be updated accordingly.
+On this rushed solution, different colours would translate into different parts. So adding a new colour means creating a new Rim part for that colour. The UI for this would be a form where the details of the part could be added. It would use GatewayProductService.addPart, GatewayProductService.addPriceRule and GatewayProductService.addConstraint methods if special pricing or incompatibility with other parts are necessary. The Part, PriceRule and Constraint backend Database tables would be updated accordingly.
 
 >Setting up prices: How can Marcus change the price of a specific part (like the diamond frame type) or specify that some combinations of choices have particular prices? How does the UI look? How does the database change to store this information?
 
-I haven't implemented nor drafted this due to lack of time, but I would use the GatewayPartService for this as well, in a similar fashion than the "create part" use case. GatewayPartService would be the bridge between the Frontend and the Backend, where the data would be persisted.
+I haven't implemented nor drafted this due to lack of time, but I would use the GatewayProductService for this as well, in a similar fashion than the "create part" use case. GatewayProductService would be the bridge between the Frontend and the Backend, where the data would be persisted.
