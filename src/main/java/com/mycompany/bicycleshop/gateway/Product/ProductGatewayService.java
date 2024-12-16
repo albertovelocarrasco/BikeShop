@@ -18,6 +18,7 @@ public interface ProductGatewayService {
     //for customer focused logic
     public List<Part> getParts();
     public Product createProduct(List<Part> parts);
+    public boolean validateProduct(List<Part> parts);
     
     //for Admin focused logic
     public void addPart(Part part);
