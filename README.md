@@ -38,3 +38,5 @@ On this rushed solution, different colours would translate into different parts.
 >Setting up prices: How can Marcus change the price of a specific part (like the diamond frame type) or specify that some combinations of choices have particular prices? How does the UI look? How does the database change to store this information?
 
 I haven't implemented nor drafted this due to lack of time, but I would use the GatewayProductService for this as well, in a similar fashion than the "create part" use case. GatewayProductService would be the bridge between the Frontend and the Backend, where the data would be persisted.
+
+I drafted more in detail the ProductGatewayService so you could see how it has as dependencies the Backend Services. Apologies for the state of the solution, it's all I got time to do.
